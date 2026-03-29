@@ -117,10 +117,10 @@ print("Minimum:", data['Warranty_Years'].min())
 print("Maximum:", data['Warranty_Years'].max())
 
 filtered_data = battery_data[
-    (battery_data['Price_USD'] <= max_budget) &
-    (battery_data['Range_km'] >= min_range) &
-    (battery_data['Charge_Time_hr'] <= max_charge_time) &
-    (battery_data['Warranty_Years'] >= min_warranty)
+    (battery_data['Price_USD'] <= budget) &
+    (battery_data['Range_km'] >= range) &
+    (battery_data['Charge_Time_hr'] <= charge_time) &
+    (battery_data['Warranty_Years'] >= warranty)
 ]
 
 filtered_data
@@ -159,10 +159,10 @@ print(" Price (USD):", best_battery['Price_USD'])
 def recommend_battery(max_budget, min_range, max_charge_time, min_warranty):
 
     filtered_data = battery_data[
-        (battery_data['Price_USD'] <= max_budget) &
-        (battery_data['Range_km'] >= min_range) &
-        (battery_data['Charge_Time_hr'] <= max_charge_time) &
-        (battery_data['Warranty_Years'] >= min_warranty)
+        (battery_data['Price_USD'] <= budget) &
+        (battery_data['Range_km'] >= range) &
+        (battery_data['Charge_Time_hr'] <= charge_time) &
+        (battery_data['Warranty_Years'] >= warranty)
     ]
 
     if filtered_data.empty:
