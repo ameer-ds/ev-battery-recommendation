@@ -323,5 +323,12 @@ with gr.Blocks(theme=theme, css=css) as app:
                 outputs=[card_output, chart_output, best_output, download_output]
             )
 
-app.launch(share=True)
+import os
+
+port = int(os.environ.get("PORT", 7860))
+
+app.launch(
+    server_name="0.0.0.0",
+    server_port=port
+)
 
