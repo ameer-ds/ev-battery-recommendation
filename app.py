@@ -100,8 +100,7 @@ import matplotlib.pyplot as plt
 # SAMPLE BATTERY DATA
 # ---------------------------
 
-battery_data
-
+battery_data = pd.read_csv("ev_ameer.csv")
 # ---------------------------
 # RECOMMENDATION FUNCTION
 # ---------------------------
