@@ -1,0 +1,18 @@
+# EV Battery Recommendation System ⚡
+
+An AI-powered web application that recommends optimal EV batteries based on user constraints such as budget, range, charging time, and warranty.
+
+## Features
+- Dynamic filtering
+- Data visualization
+- Downloadable reports
+- Interactive UI (Gradio)
+
+## Tech Stack
+- Python
+- Pandas
+- Gradio
+- Matplotlib
+
+## Live Demo
+https://ev-battery-recommendation.onrender.com/
