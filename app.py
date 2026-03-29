@@ -9,7 +9,7 @@ Original file is located at
 
 import pandas as pd
 
-data= pd.read_csv("ev ameer.csv")
+data= pd.read_csv("ev_ameer.csv")
 data
 
 data.isnull().sum()
